@@ -36,6 +36,18 @@ export default function Locations({
           Air
         </label>
       </form> */}
+      <br />
+      <h4
+        style={{
+          fontSize: "24px",
+          fontWeight: "bold",
+          color: "#007bff",
+          marginBottom: "10px",
+          textAlign: "center",
+        }}
+      >
+        List of Animals
+      </h4>
       <Form.Check
         inline
         label="Land"
