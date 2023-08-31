@@ -1,3 +1,5 @@
+import Form from "react-bootstrap/Form";
+
 export default function Locations({
   onland,
   inair,
@@ -8,7 +10,7 @@ export default function Locations({
 }) {
   return (
     <>
-      <form>
+      {/* <form>
         <label>
           <input
             type="checkbox"
@@ -33,7 +35,28 @@ export default function Locations({
           />
           Air
         </label>
-      </form>
+      </form> */}
+      <Form.Check
+        inline
+        label="Land"
+        type="switch"
+        checked={onland}
+        onChange={landCheckboxHandler}
+      />
+      <Form.Check
+        inline
+        label="Sea"
+        type="switch"
+        checked={insea}
+        onChange={seaCheckboxHandler}
+      />
+      <Form.Check
+        inline
+        label="Air"
+        type="switch"
+        checked={inair}
+        onChange={airCheckboxHandler}
+      />
     </>
   );
 }
